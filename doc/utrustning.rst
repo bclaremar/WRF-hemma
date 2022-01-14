@@ -14,12 +14,11 @@ Datorkluster
 * Varje dator fungerar som en ”nod”.
 * Från småskaligt Raspberry Pi-kluster…
 
-.. image:: images/RPI1.jpeg
+.. figure:: images/RPI1.jpeg
   :width: 400
   :alt: Raspberry Pi-kluster
 
-..
-Mitt Raspberry Pi-kluster med tre beräkningsnoder till höger och en ”login”-nod till vänster. På detta system kör jag 24 h-prognos med 9 km upplösning över 2/3 av Skandinavien (140×120 pkt) inklusive Ö Svealand i 3 km (60×60) på ca 4 h.
+  Mitt Raspberry Pi-kluster med tre beräkningsnoder till höger och en ”login”-nod till vänster. På detta system kör jag 24 h-prognos med 9 km upplösning över 2/3 av Skandinavien (140×120 pkt) inklusive Ö Svealand i 3 km (60×60) på ca 4 h.
 
 .. image:: images/RPI_o.jpeg
   :width: 400
