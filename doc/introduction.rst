@@ -2,7 +2,21 @@
 Introduction
 ============
 
-Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.
+```{challenge} Why documenting code?
+
+- **Use the collaborative document**.
+- Is project documentation important? Why?
+- How would you describe a useful documentation?
+- How can you motivate your colleagues to contribute to the documentation?
+```
+
+```{solution} Our motivation (but let us brainstorm first)
+
+- You will probably use your code in the future and may forget details.
+- You may want others to use your code (almost impossible without documentation).
+- You may want others to contribute to the code.
+- Shield your limited time and let the documentation answer FAQs.
+```Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.
 
 De flesta av er kan se det som ett vanligt föredrag. Några av er kanske känner sig inspirerade av att göra något själva. Låt er inte stressas då! Se föredraget som en introduktion. Om intresse finns kan vi ordna en workshop senare i höst!
 
