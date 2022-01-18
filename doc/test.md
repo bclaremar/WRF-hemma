@@ -1,3 +1,5 @@
+(sphinx)=
+
 # Motivation and wishlist
 
 ## Motivation
