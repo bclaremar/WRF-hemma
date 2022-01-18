@@ -2,11 +2,15 @@
 Introduction
 ============
 
-```{keypoints}
-- Documentation is part of the code and should be versionable.
-- Documentation (sources) should be tracked with the corresponding code in the same repository.
-- Use lightweight and standard markup languages such as reStructuredText or Markdown.
-```
+.. prereq::
+
+   1. Basic understanding of Git.
+
+   2. You need to have `Sphinx <http://www.sphinx-doc.org>`__ installed (as
+      part of your Python environment installation).
+
+   3. For the `GitHub Pages <https://pages.github.com>`__ part you need a `GitHub <https://github.com>`__ account.
+
 
 Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.
 
