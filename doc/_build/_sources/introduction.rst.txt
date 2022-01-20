@@ -2,14 +2,16 @@
 Introduction
 ============
 
-.. prereq::
+.. note::
+   This is note text. Use a note for information you want the user to
+   pay particular attention to.
 
-   1. Basic understanding of Git.
+   If note text runs over a line, make sure the lines wrap and are indented to
+   the same level as the note tag. If formatting is incorrect, part of the note
+   might not render in the HTML output.
 
-   2. You need to have `Sphinx <http://www.sphinx-doc.org>`__ installed (as
-      part of your Python environment installation).
-
-   3. For the `GitHub Pages <https://pages.github.com>`__ part you need a `GitHub <https://github.com>`__ account.
+   Notes can have more than one paragraph. Successive paragraphs must
+   indent to the same level as the rest of the note.
 
 
 Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.
