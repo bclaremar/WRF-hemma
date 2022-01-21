@@ -37,15 +37,15 @@ Steg
   - Meteorologisk drivning, GFS 0.25° från NCEP är gratis.
   - 3D-version av WRF, eller 1D-version (ej så krävande).
 
-5. Analysera resultatet
+#. Analysera resultatet
 
   - wrf-python
 
-6. Automatisera (frivilligt men bra om man just kör prognoser)
+#. Automatisera (frivilligt men bra om man just kör prognoser)
 
   - skript och kronjobb
 
-7. Publicera på webben (frivilligt)
+#. Publicera på webben (frivilligt)
 
   - För egen del sätt upp egen webserver
   - Annars på ”webhotell”
