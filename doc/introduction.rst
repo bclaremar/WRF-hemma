@@ -4,6 +4,10 @@ Introduktion
 
 .. note::
    Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser.
+   
+   Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell. Ibland finns lite olika alternativ beroende vad du redan kan eller har för utrustning. Jag har valt modellen WRF, som jag har mest erfarenhet av, och som amatörer över världen använder. WRF-modellen (då med dataassimilering) används också av många nationella vädertjänster.
+
+   Längre ner ger jag länkar till online-handledningar eller kortkurser. Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget. Titta på första punkten för att bestämma dig för vilket system som passar där. Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.
 
 
 Steg
