@@ -2,9 +2,8 @@
 Introduktion
 ============
 
-.. Intro::
-   Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser
-
+.. note::
+   Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser.
 
 
 Steg
