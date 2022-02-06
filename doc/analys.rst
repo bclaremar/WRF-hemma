@@ -1,0 +1,2 @@
+Analysera resultatet
+====================
