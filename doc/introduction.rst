@@ -1,50 +1,43 @@
 
-Introduction
+Introduktion
 ============
 
-.. note::
-   This is note text. Use a note for information you want the user to
-   pay particular attention to.
+.. note:: Intro
+   Här tänkte jag samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser.
+   
+   - Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell. 
+   - Ibland finns lite olika alternativ beroende vad du redan kan eller har för utrustning.
+   - Jag har valt modellen WRF, som jag har mest erfarenhet av, och som amatörer över världen använder.
+   - WRF-modellen (då med dataassimilering) används också av många nationella vädertjänster.
 
-   If note text runs over a line, make sure the lines wrap and are indented to
-   the same level as the note tag. If formatting is incorrect, part of the note
-   might not render in the HTML output.
-
-   Notes can have more than one paragraph. Successive paragraphs must
-   indent to the same level as the rest of the note.
-
-
-Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.
-
-De flesta av er kan se det som ett vanligt föredrag. Några av er kanske känner sig inspirerade av att göra något själva. Låt er inte stressas då! Se föredraget som en introduktion. Om intresse finns kan vi ordna en workshop senare i höst!
-
-Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell. Ibland finns lite olika alternativ beroende vad du redan kan eller har för utrustning. Jag har valt modellen WRF, som jag har mest erfarenhet av, och som amatörer över världen använder. WRF-modellen (då med dataassimilering) används också av många nationella vädertjänster.
-
--Längre ner ger jag länkar till online-handledningar eller kortkurser. Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget. Titta på första punkten för att bestämma dig för vilket system som passar där. Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.
+   - Längre ner ger jag länkar till online-handledningar eller kortkurser. 
+   - Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget. 
+   - Titta på första punkten för att bestämma dig för vilket system som passar där. 
+   - Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.
 
 
 Steg
 ----------
 
 
-#. Utrustning
+1. Utrustning
 
   - alt 1: En riktigt snabb dator
   - alt 2a: flera datorer med liknande prestanda i ett ”datorkluster”
   - alt 3b: flera enkortsdatorer, typ RaspberryPi, i ett ”datorkluster”
     
-#. Linux eller andra UNIX-liknande system
+2. Linux eller andra UNIX-liknande system
   
   - Linux på Windows (WSL2)
   - MacOS terminal
   - Linux terminal
 
-#. Installation av WRF och nödvändig sekundär programvara/bibliotek
+3. Installation av WRF och nödvändig sekundär programvara/bibliotek
 
   - Du behöver kunna läsa filer i NetCDF- och GRIB2-format
   - Om du kör flera datorer behöver du parallelliseringsbiblioteket openMPI
  
-#.  Köra WRF
+4.  Köra WRF
 
   - Geografisk data
   - Meteorologisk drivning, GFS 0.25° från NCEP är gratis.
