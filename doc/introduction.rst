@@ -2,7 +2,7 @@
 Introduktion
 ============
 
-.. note:: Intro
+.. note::
    Här tänkte jag samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser.
    
    - Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell. 

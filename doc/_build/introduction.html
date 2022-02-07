@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; WRF-hemma 0.1 documentation</title>
+  <title>Introduktion &mdash; WRF-hemma 0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
@@ -48,13 +48,17 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduktion</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#steg">Steg</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="utrustning.html">Utrustning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">Motivation and wishlist</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html#heading">Heading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bygga.html">Bygga ett datorkluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installWRF.html">Installera WRF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRFrun.html">Köra WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analys.html">Analysera resultatet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisera.html">Automatisera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">Problem</a></li>
 </ul>
 
         </div>
@@ -71,7 +75,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Introduction</li>
+      <li>Introduktion</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,22 +85,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
+  <div class="section" id="introduktion">
+<h1>Introduktion<a class="headerlink" href="#introduktion" title="Permalink to this headline"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is note text. Use a note for information you want the user to
-pay particular attention to.</p>
-<p>If note text runs over a line, make sure the lines wrap and are indented to
-the same level as the note tag. If formatting is incorrect, part of the note
-might not render in the HTML output.</p>
-<p>Notes can have more than one paragraph. Successive paragraphs must
-indent to the same level as the rest of the note.</p>
+<p>Här tänkte jag samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser.</p>
+<ul class="simple">
+<li><p>Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell.</p></li>
+<li><p>Ibland finns lite olika alternativ beroende vad du redan kan eller har för utrustning.</p></li>
+<li><p>Jag har valt modellen WRF, som jag har mest erfarenhet av, och som amatörer över världen använder.</p></li>
+<li><p>WRF-modellen (då med dataassimilering) används också av många nationella vädertjänster.</p></li>
+<li><p>Längre ner ger jag länkar till online-handledningar eller kortkurser.</p></li>
+<li><p>Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget.</p></li>
+<li><p>Titta på första punkten för att bestämma dig för vilket system som passar där.</p></li>
+<li><p>Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.</p></li>
+</ul>
 </div>
-<p>Här tänkte vi samla lite matnyttigt kring hur du sätter upp dina egna väderprognoser. Nu fungerar denna sida som introduktion till webbinariet 28 september. Med hjälp av sidan hoppas jag att du dels får en bild av hur intressant webbinariet är för din del och dels ge lite bakgrundinfo för att det ska bli lättare att hänga med.</p>
-<p>De flesta av er kan se det som ett vanligt föredrag. Några av er kanske känner sig inspirerade av att göra något själva. Låt er inte stressas då! Se föredraget som en introduktion. Om intresse finns kan vi ordna en workshop senare i höst!</p>
-<p>Här nedan radar jag upp först upp delarna och stegen som behövs eller kan behövas för att kunna köra en egen väderprognosmodell. Ibland finns lite olika alternativ beroende vad du redan kan eller har för utrustning. Jag har valt modellen WRF, som jag har mest erfarenhet av, och som amatörer över världen använder. WRF-modellen (då med dataassimilering) används också av många nationella vädertjänster.</p>
-<p>-Längre ner ger jag länkar till online-handledningar eller kortkurser. Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget. Titta på första punkten för att bestämma dig för vilket system som passar där. Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.</p>
 <div class="section" id="steg">
 <h2>Steg<a class="headerlink" href="#steg" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
@@ -109,7 +113,7 @@ indent to the same level as the rest of the note.</p>
 <li><p>alt 3b: flera enkortsdatorer, typ RaspberryPi, i ett ”datorkluster”</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple">
+<ol class="arabic simple" start="2">
 <li><p>Linux eller andra UNIX-liknande system</p></li>
 </ol>
 <blockquote>
@@ -119,7 +123,7 @@ indent to the same level as the rest of the note.</p>
 <li><p>Linux terminal</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple">
+<ol class="arabic simple" start="3">
 <li><p>Installation av WRF och nödvändig sekundär programvara/bibliotek</p></li>
 </ol>
 <blockquote>
@@ -128,7 +132,7 @@ indent to the same level as the rest of the note.</p>
 <li><p>Om du kör flera datorer behöver du parallelliseringsbiblioteket openMPI</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple">
+<ol class="arabic simple" start="4">
 <li><p>Köra WRF</p></li>
 </ol>
 <blockquote>

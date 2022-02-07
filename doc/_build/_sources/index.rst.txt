@@ -12,7 +12,12 @@ Welcome to WRF-hemma's documentation!
    
    introduction.rst
    utrustning.rst
-   test.md
+   bygga.rst
+   installWRF.rst
+   WRFrun.rst
+   analys.rst
+   automatisera.rst
+   problem.rst
 
 
 
