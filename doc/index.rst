@@ -9,9 +9,11 @@ Welcome to WRF-hemma's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
+   oveerview.rst
    introduction.rst
    utrustning.rst
+   WRF.rst
+   datorer.rst
    bygga.rst
    installWRF.rst
    WRFrun.rst
