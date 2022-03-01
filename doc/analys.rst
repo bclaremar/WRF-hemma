@@ -1,2 +1,8 @@
 Analysera resultatet
 ====================
+
+Alternativ
+----------
+
+Exempel
+-------
