@@ -14,3 +14,13 @@ Raspberry Pi
 
 Jämförelser
 -----------
+
+
+LINUX
+-----
+
+Script
+------
+
+SLURM
+-----
