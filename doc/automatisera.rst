@@ -13,5 +13,5 @@ Exempel
 -------
 
 
-Cron-jobb
+Kronjobb
 ---------
