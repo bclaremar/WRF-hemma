@@ -22,5 +22,8 @@ LINUX
 Script
 ------
 
+Parallellisering
+---------------
+
 SLURM
 -----
