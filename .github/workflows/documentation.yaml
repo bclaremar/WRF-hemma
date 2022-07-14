@@ -1,8 +1,8 @@
-name: Doc
+name: Docs
 on: [push, pull_request]
 
 jobs:
-  doc:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
