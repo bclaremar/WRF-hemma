@@ -23,7 +23,7 @@ Varför göra detta?
    - https://www.smhi.se/data/utforskaren-oppna-data/meteorologisk-modell-arome-prognosdata-realtid 
 
 
- -Kontroll!
+- **Kontroll!**
 - Du kan testa olika fysik
 - Välja själv vad du vill analysera
 - Lära dig. Du blir en expert på ditt system, systemadministratör!
