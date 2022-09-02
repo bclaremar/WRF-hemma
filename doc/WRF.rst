@@ -28,20 +28,20 @@ WPS
 ---
 - För riktiga prognoser (real) krävs för-processering.
 - Geografisk information
-  - Geogrid	skapar det rutnät du definierar + landanvändning och topografi
-  - Förvalda data är USGS topografi & MODIS landanvändning
-  - Egna data
-    - Corine-data över Europa landanvändning mycket bättre.
-    - Lantmäteriets topografi (METRIA) kan vara viktigt vid högupplösta simuleringar
+   - Geogrid	skapar det rutnät du definierar + landanvändning och topografi
+   - Förvalda data är USGS topografi & MODIS landanvändning
+   - Egna data
+      - Corine-data över Europa landanvändning mycket bättre.
+      - Lantmäteriets topografi (METRIA) kan vara viktigt vid högupplösta simuleringar
     
 - Meteorologisk drivning
-  - Hämta hem drivdata (GRIB-format). 
-  - GFS från NCEP är gratis. 
-  - ECMWF innebär kostnad om man inte tillhör akademin. 
-  - Finns även databaser för vattentemp/is
+   - Hämta hem drivdata (GRIB-format). 
+      - GFS från NCEP är gratis. 
+      - ECMWF innebär kostnad om man inte tillhör akademin. 
+      - Finns även databaser för vattentemp/is
   
-- Ungrib 	konverterar GRIB till ”intermediate format” 
-- Metgrid 	sammanför geodata och meteorologisk data i rätt rutnät i gemensamma filer: met_em.d<domän-nummer>.<tidpunkt>
+   - Ungrib 	konverterar GRIB till ”intermediate format” 
+   - Metgrid 	sammanför geodata och meteorologisk data i rätt rutnät i gemensamma filer: met_em.d<domän-nummer>.<tidpunkt>
 
 Verkligt fall
 -------------
