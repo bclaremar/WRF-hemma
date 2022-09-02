@@ -1,14 +1,18 @@
 Vad är WRF-modellen
 ===================
+
 - Weather Research & Forecasting
 - Utvecklad på NCAR
 - Forskning: klimat och modellfysik
 - Prognoser: används av vissa vädertjänster
-  - Försvaret (METOCC)
+   - Försvaret (METOCC)
+   
 - Icke-hydrostatisk: 
--   bra i bergsterräng och konvektionsupplösning
+   - bra i bergsterräng och konvektionsupplösning
+   
 - Exempel på ihopkopplingar
-  - vågmodell, havsmodell
+   - vågmodell, havsmodell
+   
 - Utbytbar fysik, kan anpassas till ”klimatet” och modellupplösning
 - Ideala fall eller reella fall
 - Dynamisk nedskalning i flera domäner 
