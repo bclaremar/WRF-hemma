@@ -32,3 +32,6 @@ Byggandet
   - OpenMPI, Python, parallella jobb
 - Följ gärna delarna i slutet också så lär du dig något extra!
 - Detta görs bäst i lugn och ro och lite ”trial and error”
+
+Alternativa kopplingar
+----------------------
