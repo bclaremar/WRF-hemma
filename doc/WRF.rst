@@ -47,11 +47,11 @@ Verkligt fall
 -------------
 
 - REAL
-  - Interpolerar met-filerna till de vertikala nivåerna som man definierat 
-  - ger initialvärden
-  - Skapar randdata som förändras för hela prognoslängden.
+   - Interpolerar met-filerna till de vertikala nivåerna som man definierat 
+   - ger initialvärden
+   - Skapar randdata som förändras för hela prognoslängden.
 - WRF
-  - Gör själva prognosen genom att stega fram i tid med alla fysikaliska och dynamiska ekvationerna i ett 3d-nät
+   - Gör själva prognosen genom att stega fram i tid med alla fysikaliska och dynamiska ekvationerna i ett 3d-nät
 
 Att köra WRF-modellen
 ---------------------
@@ -59,7 +59,7 @@ Att köra WRF-modellen
 - UNIX/Linux-miljö 
 - MacOS fungerar om du har snabb dator
 - Cygwin i Windows
-  - https://www2.mmm.ucar.edu/wrf/WG2/WRF_Win64.htm
-  - Någon med erfarenhet?
+   - https://www2.mmm.ucar.edu/wrf/WG2/WRF_Win64.htm
+   - Någon med erfarenhet?
 
 
