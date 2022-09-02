@@ -14,6 +14,36 @@ Introduktion
    - Om du är intresserad av att komma igång och du inte vet något om LINUX, eller behöver fräscha upp minnet så föreslår jag att du klickar på en sådan länk innan föredraget. 
    - Titta på första punkten för att bestämma dig för vilket system som passar där. 
    - Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.
+   
+Varför göra detta?
+==================
+- Finns ju så mkt redan på nätet!
+- Kartor, tvärsnitt, hodogram, modellsonderingar
+ -Öppna Arome-data?
+   - https://www.smhi.se/data/utforskaren-oppna-data/meteorologisk-modell-arome-prognosdata-realtid 
+
+
+ -Kontroll!
+- Du kan testa olika fysik
+- Välja själv vad du vill analysera
+- Lära dig. Du blir en expert på ditt system, systemadministratör!
+- Hobby
+- Hjälp på olika forum, bara googla!
+- Flexibelt, går att utöka vartefter.
+
+En översikt över 
+----------------
+
+- Prognosmodellernas tekniska miljö, d.v.s. nätverk av dator
+- Dess datasystemmiljö
+- Steg för att sätta upp WRF-modellen
+- Steg för att köra WRF-modellen
+- Analys av prognosdatan
+- Förhoppningsvis en inspiration till er som vill försöka sätta upp WRF-modellen hemma
+
+- … inte en utvärdering av WRF-modellen!
+- … lite reklam för Raspberry Pi, 
+- men dess tillkortakommanden kommer synas och alternativ ges.
 
 
 Steg
