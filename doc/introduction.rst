@@ -19,7 +19,7 @@ Varför göra detta?
 ==================
 - Finns ju så mkt redan på nätet!
 - Kartor, tvärsnitt, hodogram, modellsonderingar
- -Öppna Arome-data?
+- Öppna Arome-data?
    - https://www.smhi.se/data/utforskaren-oppna-data/meteorologisk-modell-arome-prognosdata-realtid 
 
 
