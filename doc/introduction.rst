@@ -16,7 +16,7 @@ Introduktion
    - Under andra punkten är det bra att bestämma vilket system du vill öva dina färdigheter i Linux och sedan eventuellt det system du vill installera WRF i.
    
 Varför göra detta?
-==================
+------------------
 - Finns ju så mkt redan på nätet!
 - Kartor, tvärsnitt, hodogram, modellsonderingar
 - Öppna Arome-data?
