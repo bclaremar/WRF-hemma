@@ -3,6 +3,7 @@ Bygga ett datorkluster
 
 Hårdvara
 --------
+
 - Datorer eller enkortsdatorer, typ Raspberry Pi — för beräkningsnoderna
   - Alternativa enkortsdatorer: https://itsfoss.com/raspberry-pi-alternatives/
 - En dator eller enkortsdator — för master-/login-nod
@@ -19,6 +20,7 @@ Hårdvara
 
 Byggandet
 ---------
+
 - Jag följde denna instruktion
   - Början specifikt för Raspberry Pi
   - https://glmdev.medium.com/building-a-raspberry-pi-cluster-784f0df9afbd
@@ -26,7 +28,7 @@ Byggandet
     - Installera LINUX och aktivera ssh (fjärråtkomst)
     - Ställ in nätverk mellan noder
     - Delad lagring
-     - Installera SLURM jobbschemaläggare
+    - Installera SLURM jobbschemaläggare
   - Testa lite enklare parallella körningar utan specialkod
     - Installera program på beräkningsnoderna från mastern
   - OpenMPI, Python, parallella jobb
