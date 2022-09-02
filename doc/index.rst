@@ -8,13 +8,12 @@ Welcome to WRF-hemma's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Sätta upp WRF:
    
    overview.rst
    introduction.rst
-   utrustning.rst
    WRF.rst
-   datorer.rst
+   utrustning.rst
    bygga.rst
    installWRF.rst
    WRFrun.rst
@@ -22,5 +21,8 @@ Welcome to WRF-hemma's documentation!
    automatisera.rst
    problem.rst
 
-
-
+.. toctree::
+   :maxdepth: 2
+   :caption: Teori:
+   
+   datorer.rst
