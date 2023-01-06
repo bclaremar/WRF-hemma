@@ -91,7 +91,7 @@ På detta system kör jag
 9 km upplösning över 2/3 av Skandinavien (140×120 pkt) inklusive Ö. Svealand i 3 km (60×60).  Bild lite senare.
 på ca 4 h. 
 
-.. figure:: images/RPi_cluster_text
+.. figure:: images/RPi_cluster_text.png
   :width: 400
   :alt: Mitt Raspberry Pi-kluster
 
@@ -137,11 +137,83 @@ Yes
 LINUX
 -----
 
+Kommandoprompen (skalet – shell)
+Liknar DOS
+[ubuntu@master:~/run]$ program word1 word2 word3 […]
+Ex: $ cd WRF/run
+Man kan välja olika ”skalspråk”. De är relativt lika ,men skiljer i detaljer.
+BASH (Bourne again shell) är ofta förvalt (använder jag)
+Andra exempel (Csh, Zsh ksh)
+
+Instruktionerna på nätet kan man oftast bara följa
+Ibland bra att kunna göra på sitt eget sätt. 
+Då är det bra att kunna en del grunder i Linux
+https://ryanstutorials.net/linuxtutorial/
+
+Typisk arbetsgång för installation av programvara i Linux
+#########################################################
+
+Systemverktyg och kända större program
+Package-managers
+automatiskt
+Olika Linux-distributioner har sina egna 
+Ubuntu/debian: apt & aptitude
+Fedora-baserad: yum
+M. m.
+
+Övriga program och om du behöver göra särskilda inställningar
+Ladda hem (komprimerad) ”källkod”
+Packa upp
+Konfigurera
+Kompilera (make)
+(testa)
+
+
+
+
 Script
 ------
+
+Man kan lägga sina kommandon i en fil och har då ett skript.
+Kommentera vad du gör med ”#”. 
+#!/bin/bash				#språk är bash
+cd /clusterfs/Documents/weather	#katalog
+curl https://tgftp.nws.noaa.gov/data/observations/metar/stations/ESCM.TXT>>ESCM		#ladda hem metar från Uppsala
+
+Sen kör/exekverar man skriptet och alla kommandon utförs!
+./metar.sh
 
 Parallellisering
 ---------------
 
+"Normala" program använder bara en processorkärna.
+Parallelliserade program kan använda flera kärnor eller t. o. m. flera noder. 
+Nyckelord som signalerar detta är exempelvis:
+inom en nod: "multi-threaded", "shared memory" och "openMP".
+För flera noder: "MPI", "distributed memory". 
+
+
 SLURM
 -----
+
+Simple Linux Utility for Resource Management
+
+Installeras på alla noder i klustret
+Gemensam ”nyckel” som gör att noderna kan kommunicera obehindrat under en körning.
+Starta ett program (kopior) samtidigt på flera kärnor/noder
+Schemalägg och köer
+nästa program du startar kan behöva vänta om alla kärnor är upptagna
+
+Ex.
+sbatch submitskript wrf.exe
+
+
+#!/bin/bash
+#SBATCH -n 12 # 12 processer, i detta fall kärnor
+#SBATCH -N 3  # 3 noder
+#SBATCH -J wrf	#jobbnamn
+cd $SLURM_SUBMIT_DIR
+
+mpiexec -n 12 ./$1	# ”WRF” är argument nummer $1 när 		 			# skriptet anropas
+
+
