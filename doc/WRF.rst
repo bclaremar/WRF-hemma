@@ -49,9 +49,13 @@ WPS
 Verkligt fall
 -------------
 
+.. figure:: images/WRF-real.png
+   :alt: WRF-real
+   
+   
 - REAL
    - Interpolerar met-filerna till de vertikala nivåerna som man definierat 
-   - ger initialvärden
+   - Ger initialvärden
    - Skapar randdata som förändras för hela prognoslängden.
 - WRF
    - Gör själva prognosen genom att stega fram i tid med alla fysikaliska och dynamiska ekvationerna i ett 3d-nät
