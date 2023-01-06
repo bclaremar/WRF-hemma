@@ -51,3 +51,7 @@ Byggandet
 
 Alternativa kopplingar
 ----------------------
+
+.. figure:: images/kopplingar.png
+  :width: 400
+  :alt: Kopplingar
