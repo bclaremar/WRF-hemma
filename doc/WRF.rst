@@ -21,6 +21,9 @@ Vad är WRF-modellen
 
 WRF
 ---
+.. figure:: images/assim.png
+   :alt: WRF-flowchart
+
 
 Grafiskt schema
 
