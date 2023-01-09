@@ -3,7 +3,7 @@ Analysera resultatet
 
 
 .. figure:: images/postprocess.png
-  :width: 400
+  :width: 200
   :alt: Postprocess
 
 Resultatfiler är i netcdf-format
