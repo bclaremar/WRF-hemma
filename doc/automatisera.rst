@@ -43,21 +43,22 @@ Starta sbatch
 
 Huvudskript
 ###########
+
 #!/bin/bash
 # cd till rätt katalog!!!
 #fixa rätt start- och sluttid
 m=$(date --date="7 hours ago" "+%m")
 d=$(date --date="7 hours ago" "+%d")
 hh=$(date --date="7 hours ago" "+%k")
-…
+...
 #Fixar med datum- och tidsformat och får fram starttider
 #yys;mms;dds;hhs
 #Och sluttider
 #yye;mme;dde;hhs
 #och antal domäner: doms och lite fysikparametrar
-….
- ./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
- ./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+...
+./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
 
 run_wrf
 #######
@@ -68,15 +69,15 @@ run_wrf
 m=$(date --date="7 hours ago" "+%m")
 d=$(date --date="7 hours ago" "+%d")
 hh=$(date --date="7 hours ago" "+%k")
-…
+...
 #Fixar med datum- och tidsformat och får fram starttider
 #yys;mms;dds;hhs
 #Och sluttider
 #yye;mme;dde;hhs
 #och antal domäner: doms och lite fysikparametrar
-….
- ./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
- ./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+...
+./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
 
 
 
