@@ -20,6 +20,7 @@ Welcome to WRF-hemma's documentation!
    analys.rst
    automatisera.rst
    problem.rst
+   summary.rst
 
 .. toctree::
    :maxdepth: 2
