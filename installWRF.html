@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installera WRF &mdash; WRF-hemma 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Köra WRF-modellen" href="WRFrun.html" />
+    <link rel="prev" title="Bygga ett datorkluster" href="bygga.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> WRF-hemma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sätta upp WRF:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Översikt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRF.html">Vad är WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utrustning.html">Utrustning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bygga.html">Bygga ett datorkluster</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installera WRF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#forberedande-installationer">Förberedande installationer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Installera WRF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installera-wps">Installera WPS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="WRFrun.html">Köra WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analys.html">Analysera resultatet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisera.html">Automatisera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Sammanfattning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teori:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="datorer.html">Datorer</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WRF-hemma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Installera WRF</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installWRF.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installera-wrf">
+<h1>Installera WRF<a class="headerlink" href="#installera-wrf" title="Permalink to this heading"></a></h1>
+<p>För Raspberry Pi
+<a class="reference external" href="https://github.com/DevinSmoot/HPC-Guides/blob/master/raspi_wrf_guide.md">https://github.com/DevinSmoot/HPC-Guides/blob/master/raspi_wrf_guide.md</a>
+Finns nyare versioner av WRF och biblioteken, så ta dem!
+Annars: <a class="reference external" href="https://www2.mmm.ucar.edu/wrf/OnLineTutorial/Introduction/start.php">https://www2.mmm.ucar.edu/wrf/OnLineTutorial/Introduction/start.php</a></p>
+<section id="forberedande-installationer">
+<h2>Förberedande installationer<a class="headerlink" href="#forberedande-installationer" title="Permalink to this heading"></a></h2>
+<p>Installera bibliotek
+fortran, c och c++ kompilatorer
+GNU är definitivt gratis
+Möjligen kan ni få till INTEL på x86-baserad CPU
+Csh shell, perl
+NETCDF-4.1.3 – säkrast välja denna version!
+zlib, Openmpi (mpich i instruktion kan bytas ut)
+Libpng, JasPer, HDF5, m4 – för GRIB-läsning</p>
+</section>
+<section id="id1">
+<h2>Installera WRF<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p>Ladda hem
+<a class="reference external" href="https://www2.mmm.ucar.edu/wrf/users/download/get_source.html">https://www2.mmm.ucar.edu/wrf/users/download/get_source.html</a>
+Konfigurera för arm-processor
+Välj vilken form av parallellisering, om någon
+Serial  bara en ”tråd”, passar 1 till 2-D idealiserade körningar
+Smpar   inom en nod, trådar delar på RAM-minnet
+Välj bara denna om du kör på en multicore-dator
+Dmpar   distribuerat minne, kan både köras inom en nod och över flera noder
+dm+sm   kan kombinera parallelliseringsmetoderna
+kan vara det effektivaste om man skräddarsyr hur domänen delas upp.
+Tar storleksordningen timme att kompilera</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/ideal.png"><img alt="compile the WRF version of choice" src="_images/ideal.png" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="installera-wps">
+<h2>Installera WPS<a class="headerlink" href="#installera-wps" title="Permalink to this heading"></a></h2>
+<p>För riktiga prognoser (real) krävs förprocessering.
+Konfigurera för ditt system
+Bygg/kompilera!
+Ladda hem geografisk data, flera GB.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bygga.html" class="btn btn-neutral float-left" title="Bygga ett datorkluster" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="WRFrun.html" class="btn btn-neutral float-right" title="Köra WRF-modellen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Björn Claremar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

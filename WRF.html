@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vad är WRF-modellen &mdash; WRF-hemma 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Utrustning" href="utrustning.html" />
+    <link rel="prev" title="Introduktion" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> WRF-hemma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sätta upp WRF:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Översikt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduktion</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vad är WRF-modellen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wrf">WRF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wps">WPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verkligt-fall">Verkligt fall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#att-kora-wrf-modellen">Att köra WRF-modellen</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utrustning.html">Utrustning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bygga.html">Bygga ett datorkluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installWRF.html">Installera WRF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRFrun.html">Köra WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analys.html">Analysera resultatet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisera.html">Automatisera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Sammanfattning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teori:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="datorer.html">Datorer</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WRF-hemma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Vad är WRF-modellen</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/WRF.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vad-ar-wrf-modellen">
+<h1>Vad är WRF-modellen<a class="headerlink" href="#vad-ar-wrf-modellen" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p>Weather Research &amp; Forecasting</p></li>
+<li><p>Utvecklad på NCAR</p></li>
+<li><p>Forskning: klimat och modellfysik</p></li>
+<li><dl class="simple">
+<dt>Prognoser: används av vissa vädertjänster</dt><dd><ul>
+<li><p>Försvaret (METOCC)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Icke-hydrostatisk:</dt><dd><ul>
+<li><p>bra i bergsterräng och konvektionsupplösning</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Exempel på ihopkopplingar</dt><dd><ul>
+<li><p>vågmodell, havsmodell</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Utbytbar fysik, kan anpassas till ”klimatet” och modellupplösning</p></li>
+<li><p>Ideala fall eller reella fall</p></li>
+<li><p>Dynamisk nedskalning i flera domäner</p></li>
+<li><p>Open-source och fri programvara</p></li>
+<li><p><a class="reference external" href="https://www2.mmm.ucar.edu/wrf/users/">https://www2.mmm.ucar.edu/wrf/users/</a></p></li>
+</ul>
+<section id="wrf">
+<h2>WRF<a class="headerlink" href="#wrf" title="Permalink to this heading"></a></h2>
+<figure class="align-default">
+<img alt="WRF-flowchart" src="_images/assim.png" />
+</figure>
+<p>Grafiskt schema</p>
+</section>
+<section id="wps">
+<h2>WPS<a class="headerlink" href="#wps" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>För riktiga prognoser (real) krävs för-processering.</p></li>
+<li><dl class="simple">
+<dt>Geografisk information</dt><dd><ul>
+<li><p>Geogrid    skapar det rutnät du definierar + landanvändning och topografi</p></li>
+<li><p>Förvalda data är USGS topografi &amp; MODIS landanvändning</p></li>
+<li><dl class="simple">
+<dt>Egna data</dt><dd><ul>
+<li><p>Corine-data över Europa landanvändning mycket bättre.</p></li>
+<li><p>Lantmäteriets topografi (METRIA) kan vara viktigt vid högupplösta simuleringar</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Meteorologisk drivning</dt><dd><ul>
+<li><dl class="simple">
+<dt>Hämta hem drivdata (GRIB-format).</dt><dd><ul>
+<li><p>GFS från NCEP är gratis.</p></li>
+<li><p>ECMWF innebär kostnad om man inte tillhör akademin.</p></li>
+<li><p>Finns även databaser för vattentemp/is</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Ungrib     konverterar GRIB till ”intermediate format”</p></li>
+<li><p>Metgrid    sammanför geodata och meteorologisk data i rätt rutnät i gemensamma filer: met_em.d&lt;domän-nummer&gt;.&lt;tidpunkt&gt;</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="verkligt-fall">
+<h2>Verkligt fall<a class="headerlink" href="#verkligt-fall" title="Permalink to this heading"></a></h2>
+<figure class="align-default">
+<img alt="WRF-real" src="_images/WRF-real.png" />
+</figure>
+<ul class="simple">
+<li><dl class="simple">
+<dt>REAL</dt><dd><ul>
+<li><p>Interpolerar met-filerna till de vertikala nivåerna som man definierat</p></li>
+<li><p>Ger initialvärden</p></li>
+<li><p>Skapar randdata som förändras för hela prognoslängden.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>WRF</dt><dd><ul>
+<li><p>Gör själva prognosen genom att stega fram i tid med alla fysikaliska och dynamiska ekvationerna i ett 3d-nät</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="att-kora-wrf-modellen">
+<h2>Att köra WRF-modellen<a class="headerlink" href="#att-kora-wrf-modellen" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Datorkraft, åtminstone för 3D</p></li>
+<li><p>UNIX/Linux-miljö</p></li>
+<li><p>MacOS fungerar om du har snabb dator</p></li>
+<li><dl class="simple">
+<dt>Cygwin i Windows</dt><dd><ul>
+<li><p><a class="reference external" href="https://www2.mmm.ucar.edu/wrf/WG2/WRF_Win64.htm">https://www2.mmm.ucar.edu/wrf/WG2/WRF_Win64.htm</a></p></li>
+<li><p>Någon med erfarenhet?</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduktion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="utrustning.html" class="btn btn-neutral float-right" title="Utrustning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Björn Claremar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

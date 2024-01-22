@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatisera &mdash; WRF-hemma 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Problem" href="problem.html" />
+    <link rel="prev" title="Analysera resultatet" href="analys.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> WRF-hemma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sätta upp WRF:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Översikt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRF.html">Vad är WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utrustning.html">Utrustning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bygga.html">Bygga ett datorkluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installWRF.html">Installera WRF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRFrun.html">Köra WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analys.html">Analysera resultatet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Automatisera</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#forenkla-for-dig">Förenkla för dig!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skript">Skript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exempel">Exempel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#huvudskript">Huvudskript</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-wrf">run_wrf</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kronjobb">Kronjobb</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Sammanfattning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teori:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="datorer.html">Datorer</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WRF-hemma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Automatisera</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/automatisera.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="automatisera">
+<h1>Automatisera<a class="headerlink" href="#automatisera" title="Permalink to this heading"></a></h1>
+<section id="forenkla-for-dig">
+<h2>Förenkla för dig!<a class="headerlink" href="#forenkla-for-dig" title="Permalink to this heading"></a></h2>
+<p>När du ser att modellen fungerar och du får OK prognoser
+Skriv skript då du själv slipper göra alla steg manuellt
+För en körning måste allt detta göras med rätta tidsperioder satta
+Ladda hem lågupplöst meteorologisk data
+Ungrib
+Metgrid
+Real
+wrf</p>
+</section>
+<section id="skript">
+<h2>Skript<a class="headerlink" href="#skript" title="Permalink to this heading"></a></h2>
+<p>Med ett bra skript behöver du bara som argument ge datum och eventuellt nåt mer som du brukar variera.
+Ex ./script_WRF.sh 2021 09 28 06 48 2
+d.v.s. datum/tid för prognosstart, 48h-prognoslängd och sen antal (fördefinierade domäner)</p>
+<p>Om du startar en ny prognos vissa klockslag varje dag kan du programmera skriptet att använda aktuellt klockslag för att veta vilken prognos du ska göra!</p>
+</section>
+<section id="exempel">
+<h2>Exempel<a class="headerlink" href="#exempel" title="Permalink to this heading"></a></h2>
+<p>Antingen skriver man få långa skript som tar hand om allt
+Eller, att föredra, ett litet skript i taget
+gör sedan ett huvudskript som samlar ihop alla delar
+Arbetsflöde för en prognocykel
+Download.sh     kan ta flera timmar om du tar globala data
+scriptWPS.sh    storleksordning ca 1 timme,
+run_ungrib.sh
+run_metgrid
+Anropa scriptWRF.sh när det andra är klart
+scriptWRF.sh            exempelutdrag strax
+Länka met.em-filer
+Run_real.sh
+<a href="#id1"><span class="problematic" id="id2">Run_</span></a> wrf                        exempelutdrag strax
+Starta sbatch</p>
+<section id="huvudskript">
+<h3>Huvudskript<a class="headerlink" href="#huvudskript" title="Permalink to this heading"></a></h3>
+<p>#!/bin/bash
+# cd till rätt katalog!!!
+#fixa rätt start- och sluttid
+m=$(date –date=”7 hours ago” “+%m”)
+d=$(date –date=”7 hours ago” “+%d”)
+hh=$(date –date=”7 hours ago” “+%k”)
+…
+#Fixar med datum- och tidsformat och får fram starttider
+#yys;mms;dds;hhs
+#Och sluttider
+#yye;mme;dde;hhs
+#och antal domäner: doms och lite fysikparametrar
+…
+./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex</p>
+</section>
+<section id="run-wrf">
+<h3>run_wrf<a class="headerlink" href="#run-wrf" title="Permalink to this heading"></a></h3>
+<p>#!/bin/bash
+# cd till rätt katalog!!!
+#fixa rätt start- och sluttid
+m=$(date –date=”7 hours ago” “+%m”)
+d=$(date –date=”7 hours ago” “+%d”)
+hh=$(date –date=”7 hours ago” “+%k”)
+…
+#Fixar med datum- och tidsformat och får fram starttider
+#yys;mms;dds;hhs
+#Och sluttider
+#yye;mme;dde;hhs
+#och antal domäner: doms och lite fysikparametrar
+…
+./run_real_9km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex
+./run_wrf_9km_3km.sh $yys $mms $dds $hhs $yye $mme $dde $hhe $doms $dt $slph $blph $rst $flex</p>
+</section>
+</section>
+<section id="kronjobb">
+<h2>Kronjobb<a class="headerlink" href="#kronjobb" title="Permalink to this heading"></a></h2>
+<p>Nästa steg är att göra ett kronjobb
+kör skriptet ett bestämt klockslag varje dag eller med visst intervall.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cron">https://en.wikipedia.org/wiki/Cron</a></p>
+<blockquote>
+<div><p>you need full path! In script as well!</p>
+</div></blockquote>
+<p>50 17-23/6 * * *  /clusterfs2/WRF/DATA/downloadscript2
+50 05 * * *      /clusterfs2/WRF/DATA/downloadscript2
+50 11 * * *      /clusterfs2/WRF/DATA/downloadscript48</p>
+<p>20 14 * * *      /clusterfs2/WRF/WPS/script_WPS48.sh
+20 01-07/6 * * *  /clusterfs2/WRF/WPS/script_WPS24hdom2.sh</p>
+<p>50 7-17/6 * * * run/an.sh               #analys
+04 21 * * * run/an.sh</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="analys.html" class="btn btn-neutral float-left" title="Analysera resultatet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="problem.html" class="btn btn-neutral float-right" title="Problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Björn Claremar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

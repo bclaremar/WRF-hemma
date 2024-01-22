@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datorer &mdash; WRF-hemma 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Sammanfattning" href="summary.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> WRF-hemma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sätta upp WRF:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Översikt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRF.html">Vad är WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utrustning.html">Utrustning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bygga.html">Bygga ett datorkluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installWRF.html">Installera WRF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WRFrun.html">Köra WRF-modellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analys.html">Analysera resultatet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatisera.html">Automatisera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem.html">Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Sammanfattning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teori:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Datorer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vad-gor-egentligen-en-dator">Vad gör egentligen en dator?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vad-ar-ett-datorkluster">Vad är ett datorkluster?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jamforelser">Jämförelser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux">LINUX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#typisk-arbetsgang-for-installation-av-programvara-i-linux">Typisk arbetsgång för installation av programvara i Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#script">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parallellisering">Parallellisering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slurm">SLURM</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WRF-hemma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Datorer</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/datorer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="datorer">
+<h1>Datorer<a class="headerlink" href="#datorer" title="Permalink to this heading"></a></h1>
+<section id="vad-gor-egentligen-en-dator">
+<h2>Vad gör egentligen en dator?<a class="headerlink" href="#vad-gor-egentligen-en-dator" title="Permalink to this heading"></a></h2>
+<p>Datorn gör det vi ber den göra, men väldigt snabbt och bokstavligt.
+Beräkna, styra, utföra…
+Förstår bara ”maskinkod”
+Vi skriver program som kan vara i olika språk:
+C, C++
+FORTRAN (WRF är skrivet nästan helt i det)
+Dessa behöver kompileras till maskinkod
+ blir då mkt snabba
+Finns även skriptspråk där vår kod tolkas direkt i en miljö
+ blir långsammare
+Ex: MATLAB, python, R, html, javascript, BASH</p>
+</section>
+<section id="vad-ar-ett-datorkluster">
+<h2>Vad är ett datorkluster?<a class="headerlink" href="#vad-ar-ett-datorkluster" title="Permalink to this heading"></a></h2>
+<p>Ett (internt) nätverk av datorer.
+Varje dator/moderkort fungerar som en “nod”.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/node.png"><img alt="Raspberry Pi-kluster" src="_images/node.png" style="width: 400px;" /></a>
+</figure>
+<p>Varje nod innehåller flera processorkärnor
+gemensamt RAM-minne (finns lite olika alternativ där) och en lokal hårddisk.
+Varje nod är ihopkopplade med nätverkskablar, t.ex. ethernet
+via en central “switch” för att tillåta trafik åt båda hållen effektivt.
+På beräkningsnoderna utförs de tunga beräkningarna.
+Gemensam hårddisk.
+Login-nod…</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/cluster.png"><img alt="Raspberry Pi-kluster" src="_images/cluster.png" style="width: 400px;" /></a>
+</figure>
+<p>En login-nod, eller “Master”
+styra beräkningsnoderna.
+På “Mastern” kan man göra sitt eget arbete
+analysera, flytta filer, fixa,
+medan beräkningsnoderna är upptagna med intensiva beräkningar.
+Använda beräkningsnoderna
+logga in på en beräkningsnod och kör.
+använd en jobb-schemaläggare, t.ex. slurm</p>
+<p>Från småskaligt Raspberry Pi-kluster…</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/RPI1.jpeg"><img alt="Raspberry Pi-kluster" src="_images/RPI1.jpeg" style="width: 400px;" /></a>
+</figure>
+<p>… till superdatorer som Nationellt SuperdatorCentrums (NSC) kluster Bi i Linköping där SMHI:s modeller körs.</p>
+</section>
+<section id="raspberry-pi">
+<h2>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this heading"></a></h2>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/RPI_o.jpeg"><img alt="Raspberry Pi-kort" src="_images/RPI_o.jpeg" style="width: 400px;" /></a>
+</figure>
+<p>Raspberry Pi 4 enkortsdator med ARM-arkitektur
+EN sådan med 8 GB RAM (Quad-core 1,5 GHz) kan du få för cirka tusenlappen.
+Ingår 2 USB2 + 2 USB3 + 2 mini-HDMI till skärmar
+Övriga attiraljer som switch, sladdar, SD-kort exklusive hårddisk hamnar nog på drygt tusenlappen också.
+Så ett kluster med fyra noder skulle gå på ca 5000 kr och öka med ca 1000 kr per nod tills du behöver köpa en större switch.
+En hårddisk kanske du redan har. Annars är de ju billiga nu för tiden.</p>
+<p>Kopplar upp trådlöst mot ”login-noden” från min Macs terminal
+secure shell (SSH).
+Mastern/Login i sin tur är ihopkopplade med beräkningsnoderna med korta ethernetsladdar.</p>
+<p>På detta system kör jag
+24 h-prognos
+9 km upplösning över 2/3 av Skandinavien (140×120 pkt) inklusive Ö. Svealand i 3 km (60×60).  Bild lite senare.
+på ca 4 h.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/RPi_cluster_text.png"><img alt="Mitt Raspberry Pi-kluster" src="_images/RPi_cluster_text.png" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="jamforelser">
+<h2>Jämförelser<a class="headerlink" href="#jamforelser" title="Permalink to this heading"></a></h2>
+<p>Rackham (UPPMAX)
+Snowy (UPPMAX)
+Bi (NSC
+Purpose
+General-purpose
+General-purpose
+SMHI and climate research
+# Nodes
+486
+228-ish +
+50 GPUs
+641
+Cores per node
+20st &#64; 2.2 GHz
+16st &#64; 2.2 GHz
+16 at &#64; GHz
+Memory/node
+128 GB
+128 GB
+64 GB
+Fat nodes
+256GB &amp; 1 TB
+256, 512 GB &amp; 4 TB
+256 GB
+Local disk (scratch)
+2 TB
+4 TB
+420 GB
+Login nodes
+Yes
+No (reached from Rackham)
+Yes</p>
+</section>
+<section id="linux">
+<h2>LINUX<a class="headerlink" href="#linux" title="Permalink to this heading"></a></h2>
+<p>Kommandoprompen (skalet – shell)
+Liknar DOS
+[<a class="reference external" href="mailto:ubuntu&#37;&#52;&#48;master">ubuntu<span>&#64;</span>master</a>:~/run]$ program word1 word2 word3 […]
+Ex: $ cd WRF/run
+Man kan välja olika ”skalspråk”. De är relativt lika ,men skiljer i detaljer.
+BASH (Bourne again shell) är ofta förvalt (använder jag)
+Andra exempel (Csh, Zsh ksh)</p>
+<p>Instruktionerna på nätet kan man oftast bara följa
+Ibland bra att kunna göra på sitt eget sätt.
+Då är det bra att kunna en del grunder i Linux
+<a class="reference external" href="https://ryanstutorials.net/linuxtutorial/">https://ryanstutorials.net/linuxtutorial/</a></p>
+<section id="typisk-arbetsgang-for-installation-av-programvara-i-linux">
+<h3>Typisk arbetsgång för installation av programvara i Linux<a class="headerlink" href="#typisk-arbetsgang-for-installation-av-programvara-i-linux" title="Permalink to this heading"></a></h3>
+<p>Systemverktyg och kända större program
+Package-managers
+automatiskt
+Olika Linux-distributioner har sina egna
+Ubuntu/debian: apt &amp; aptitude
+Fedora-baserad: yum
+M. m.</p>
+<p>Övriga program och om du behöver göra särskilda inställningar
+Ladda hem (komprimerad) ”källkod”
+Packa upp
+Konfigurera
+Kompilera (make)
+(testa)</p>
+</section>
+</section>
+<section id="script">
+<h2>Script<a class="headerlink" href="#script" title="Permalink to this heading"></a></h2>
+<p>Man kan lägga sina kommandon i en fil och har då ett skript.
+Kommentera vad du gör med ”#”.
+#!/bin/bash                             #språk är bash
+cd /clusterfs/Documents/weather #katalog
+curl <a class="reference external" href="https://tgftp.nws.noaa.gov/data/observations/metar/stations/ESCM.TXT">https://tgftp.nws.noaa.gov/data/observations/metar/stations/ESCM.TXT</a>&gt;&gt;ESCM         #ladda hem metar från Uppsala</p>
+<p>Sen kör/exekverar man skriptet och alla kommandon utförs!
+./metar.sh</p>
+</section>
+<section id="parallellisering">
+<h2>Parallellisering<a class="headerlink" href="#parallellisering" title="Permalink to this heading"></a></h2>
+<p>“Normala” program använder bara en processorkärna.
+Parallelliserade program kan använda flera kärnor eller t. o. m. flera noder.
+Nyckelord som signalerar detta är exempelvis:
+inom en nod: “multi-threaded”, “shared memory” och “openMP”.
+För flera noder: “MPI”, “distributed memory”.</p>
+</section>
+<section id="slurm">
+<h2>SLURM<a class="headerlink" href="#slurm" title="Permalink to this heading"></a></h2>
+<p>Simple Linux Utility for Resource Management</p>
+<p>Installeras på alla noder i klustret
+Gemensam ”nyckel” som gör att noderna kan kommunicera obehindrat under en körning.
+Starta ett program (kopior) samtidigt på flera kärnor/noder
+Schemalägg och köer
+nästa program du startar kan behöva vänta om alla kärnor är upptagna</p>
+<p>Ex.
+sbatch submitskript wrf.exe</p>
+<p>#!/bin/bash
+#SBATCH -n 12 # 12 processer, i detta fall kärnor
+#SBATCH -N 3  # 3 noder
+#SBATCH -J wrf  #jobbnamn
+cd $SLURM_SUBMIT_DIR</p>
+<p>mpiexec -n 12 ./$1      # ”WRF” är argument nummer $1 när                                       # skriptet anropas</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="summary.html" class="btn btn-neutral float-left" title="Sammanfattning" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Björn Claremar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
